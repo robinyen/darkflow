@@ -70,14 +70,14 @@ class weights_loader(loader):
                 val = walker.walk(new.wsize[par])
                 new.w[par] = val
             new.finalize(walker.transpose)
-
+'''
         if walker.path is not None:
             assert walker.offset == walker.size, \
             'expect {} bytes, found {}'.format(
                 walker.offset, walker.size)
             print('Successfully identified {} bytes'.format(
                 walker.offset))
-
+'''
 class checkpoint_loader(loader):
     """
     one who understands .ckpt files, very much
